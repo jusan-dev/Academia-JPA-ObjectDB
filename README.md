@@ -30,7 +30,7 @@ y en Curso → Matrícula. La relación Profesor ↔ Curso es bidireccional sin 
 **Consultas JPQL:** más de 10, entre ellas `JOIN FETCH` con `DISTINCT`, la media de
 notas con `AVG` y actualizaciones con `UPDATE`.
 
-<img src="docs/uml.png">
+<img src="docs/UML.png">
 
 ## Documentación
 
