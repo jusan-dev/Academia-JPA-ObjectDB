@@ -1,0 +1,15 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"  version="2.1">
+    <persistence-unit name="proyectoSanchezDB">
+        <provider>com.objectdb.jpa.Provider</provider>
+        <class>Alumno</class>
+        <class>Profesor</class>
+        <class>Asignatura</class>
+        <class>Curso</class>
+        <class>Matricula</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url"
+                      value="objectdb:db/proyectoSanchezDB.odb"/>
+        </properties>
+    </persistence-unit>
+</persistence>
+
