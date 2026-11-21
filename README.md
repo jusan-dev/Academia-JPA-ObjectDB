@@ -20,7 +20,7 @@ Java · JPA · JPQL · ObjectDB · Swing · UML · NetBeans
 
 - Alumno 1 ─ N Matrícula N ─ 1 Curso
 - Curso N ─ 1 Asignatura
-- Curso N ─ 1 Profesor (opcional)
+- Curso N ─ 1 Profesor
 
 La matrícula actúa como nexo entre alumno y curso y almacena la nota.
 
@@ -30,7 +30,7 @@ y en Curso → Matrícula. La relación Profesor ↔ Curso es bidireccional sin 
 **Consultas JPQL:** más de 10, entre ellas `JOIN FETCH` con `DISTINCT`, la media de
 notas con `AVG` y actualizaciones con `UPDATE`.
 
-<!-- Añade aquí el diagrama UML: ![UML](docs/uml.png) -->
+<img src="docs/uml.png">
 
 ## Documentación
 
@@ -40,15 +40,15 @@ JPQL y capturas de la aplicación) está en [`Memoria.pdf`](Memoria.pdf).
 ## Cómo ejecutarlo
 
 ### Requisitos
-- JDK 17 o superior (o el que uses en NetBeans)
+- JDK 21 o superior 
 - NetBeans
 - [ObjectDB](https://www.objectdb.com/download) (`objectdb.jar`). No se incluye
   en el repositorio por ser software propietario.
 
 ### Pasos
-1. Descarga ObjectDB y añade `objectdb.jar` a las librerías del proyecto.
-2. Abre el proyecto en NetBeans y haz *Clean and Build*.
-3. Ejecuta `app.MainProyecto`. El fichero de base de datos
+1. Descargar ObjectDB y añadir `objectdb.jar` a las librerías del proyecto.
+2. Abrir el proyecto en NetBeans y hacer *Clean and Build*.
+3. Ejecutar `app.MainProyecto`. El fichero de base de datos
    (`db/proyectoSanchezDB.odb`) se crea automáticamente al arrancar.
 
 ## Aprendizajes
@@ -56,7 +56,6 @@ JPQL y capturas de la aplicación) está en [`Memoria.pdf`](Memoria.pdf).
 - Funcionamiento de JPA y JPQL, y de los distintos tipos de cascada
 - Cuándo encaja una base de datos orientada a objetos (aplicaciones contenidas con
   base de datos local) frente a una relacional (más concurrencia y escala)
-- Importancia de acotar el alcance del proyecto al tiempo disponible
 
 ## Autor
 
