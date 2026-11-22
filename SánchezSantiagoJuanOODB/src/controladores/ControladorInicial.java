@@ -24,8 +24,6 @@ public class ControladorInicial {
         ventana.jBotonAlumnos.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                //Lo hago de esta manera para no crear muchos objetos
-                //cada vez que se vuelve al controlador inicial
                 ControladorAlumnos c = new ControladorAlumnos(ControladorInicial.this);
                 c.getConsultaAlumnos().setVisible(true);
                 ventana.setVisible(false);
