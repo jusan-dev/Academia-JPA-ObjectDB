@@ -48,8 +48,7 @@ JPQL y capturas de la aplicación) está en [`Memoria.pdf`](Memoria.pdf).
 ### Pasos
 1. Descargar ObjectDB y añadir `objectdb.jar` a las librerías del proyecto.
 2. Abrir el proyecto en NetBeans y hacer *Clean and Build*.
-3. Ejecutar `app.MainProyecto`. El fichero de base de datos
-   (`db/proyectoSanchezDB.odb`) se crea automáticamente al arrancar.
+3. Ejecutar `app.MainProyecto`.
 
 ## Aprendizajes
 
