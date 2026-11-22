@@ -26,12 +26,8 @@ public class ControladorInicial {
             public void actionPerformed(ActionEvent e) {
                 //Lo hago de esta manera para no crear muchos objetos
                 //cada vez que se vuelve al controlador inicial
-                ControladorAlumnos c = null;
-                if(c == null){
-                    c = new ControladorAlumnos(ControladorInicial.this);
-                }else{
-                    c.getConsultaAlumnos().setVisible(true);
-                }
+                ControladorAlumnos c = new ControladorAlumnos(ControladorInicial.this);
+                c.getConsultaAlumnos().setVisible(true);
                 ventana.setVisible(false);
             }
         });
@@ -39,12 +35,8 @@ public class ControladorInicial {
         ventana.jBotonMatriculas.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                ControladorMatriculas c = null;
-                if( c == null){
-                    c = new ControladorMatriculas(ControladorInicial.this);
-                }else{
-                    c.getInicioMatricula().setVisible(true);
-                }
+                ControladorMatriculas c = new ControladorMatriculas(ControladorInicial.this);
+                c.getInicioMatricula().setVisible(true);
                 ventana.setVisible(false);                
             }
         });
@@ -52,12 +44,8 @@ public class ControladorInicial {
         ventana.jBotonProfesores.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                ControladorProfesores c = null;
-                if(c == null){
-                    c = new ControladorProfesores(ControladorInicial.this);
-                }else{
-                    c.getInicioProfesor().setVisible(true);
-                }
+                ControladorProfesores c = new ControladorProfesores(ControladorInicial.this);
+                c.getInicioProfesor().setVisible(true);
                 ventana.setVisible(false);
             }
         });
@@ -65,12 +53,8 @@ public class ControladorInicial {
         ventana.jBotonCursos.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
-                ControladorCursos c = null;
-                if(c == null){
-                    c = new ControladorCursos(ControladorInicial.this);
-                }else{
-                    c.getInicioCurso().setVisible(true);
-                }
+                ControladorCursos c = new ControladorCursos(ControladorInicial.this);
+                c.getInicioCurso().setVisible(true);
                 ventana.setVisible(false);
             }
         });

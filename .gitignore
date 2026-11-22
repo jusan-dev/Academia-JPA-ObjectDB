@@ -14,3 +14,4 @@ objectdb*.jar
 # Sistema / IDE
 .DS_Store
 Thumbs.db
+/SánchezSantiagoJuanOODB/nbproject/private/
